@@ -10,10 +10,6 @@
 
 body {
 
-    min-height: 100vh;
-
-    border: 2px solid blue;
-
 
     display: grid;
 
@@ -30,6 +26,7 @@ body {
 
     background-color: white;
 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar {
@@ -150,6 +147,8 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 
+    margin-right: 30px;
+
 }
 
 
@@ -161,9 +160,10 @@ img {
 
 input[type="search"]{
     height: 30px;
-    width: 700px;
-    background-color: aliceblue;
+    width: 600px;
+    background-color: #e2e8f0;
     border-radius: 25px;
+    border: 0px;
     margin-left: 40px;
 
 }
@@ -175,13 +175,20 @@ input[type="search"]{
 }
 
 #profile-pic {
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
-
-    margin-left: 10px;
     margin-right: 10px;
 
+}
+
+#your-name {
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+#profile-pic-big {
+    border-radius: 50%;
 }
 
 
@@ -193,12 +200,19 @@ input[type="search"]{
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
+
+    column-gap: 0px;
 }
 
 /* bottom left */
 .bottom-row-left {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    width: 300px;
+
+    justify-self: start;
+    margin-left: 40px;
+
 }
 
 #btm-left-left {
@@ -211,6 +225,8 @@ input[type="search"]{
 #btm-left-right {
     display: grid;
     align-items: center;
+
+    width: 200px;
 
 }
 
@@ -247,8 +263,8 @@ input[type="search"]{
 }
 
 button {
-    width: 85px;
-    height: 35px;
+    width: 90px;
+    height: 37.5px;
     border-radius: 25px;
     border: 0px;
 
@@ -323,14 +339,57 @@ button {
 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
+    display: grid;
+
+    justify-items: end;
+    align-items: center;
+
+}
+
+.top {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 50px;
+
+    align-items: center;
+    justify-items: start;
+
+
+    margin-left: 30px;
+    margin-right: 40px;
+    
+
+}
+
+.bottom {
+    display: grid;
+    
+    grid-template-columns: repeat(3, 30px);
+    grid-template-rows: 1fr;
+
+    justify-items: end;
+    align-items: center;
+
+    margin-right: 30px;
+    gap: 30px;
 
 }
 
 .card-img {
-    border: 2px solid red;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.5;
+    margin-bottom: 15px;
+}
+
+.card-info {
+    color: grey;
 }
 
 
@@ -372,7 +431,6 @@ button {
 /* Trending */
 
 .trending-grid {
-
     background-color: white;
     border-radius: 10px;
 
